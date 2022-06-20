@@ -1,0 +1,36 @@
+.socials__list {
+    display: flex;
+    justify-content: center;
+}
+.socials__item:not(:first-child) {
+    margin-left: 10px;
+}
+.socials__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+
+    width: 44px;
+    height: 44px;
+
+}
+.socials__icon {
+    width: 20px;
+    height: 20px;
+}
+.socials__icon--grey {
+    fill: #AFB1B8;
+
+    &:hover,
+    &:focus {
+        fill: $accent-color;
+    }
+}
+.socials__link--white {
+    background-color:rgba(255, 255, 255, 0.1);
+}
+.socials__icon--white {
+    fill: $white-bg-color;
+}
+

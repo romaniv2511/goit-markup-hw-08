@@ -1,0 +1,29 @@
+.features__item:not(:first-child) {
+    margin-top: 30px;
+}
+
+.features__thumb {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-radius: 4px;
+
+    background-color: $secondary-bg-color;
+}
+.features__icon {
+    width: 70px;
+    height: 70px;
+}
+.features__title {
+    margin-top: 30px;
+
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+.features__description {
+    margin-top: 10px;
+
+    font-size: 14px;
+    line-height: 1.71;
+    text-align: left;
+}

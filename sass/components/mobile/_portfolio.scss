@@ -1,0 +1,116 @@
+.portfolio {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.btn__set {
+    display: flex;
+    flex-wrap: wrap;
+}
+.btn__item {
+    &:not(:first-child) {
+        margin-left: 8px;
+    }
+    @media screen and (max-width:767px) {
+        &:nth-last-child(-n+2) {
+            margin-top: 15px;
+        }
+
+        &:nth-child(4) {
+            margin-left: 0;
+        }
+    }
+}
+.portfolio__button {
+    padding: 6px 22px;
+    border: 0;
+    border-radius: 4px;
+
+    color: $title-color;
+    background-color: #F5F4FA;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+
+    transition: color $duration $timing-function,
+            background-color $duration $timing-function,
+            box-shadow $duration $timing-function;
+
+    &:hover, &:focus {
+        color: $white-bg-color;
+        background-color: $accent-color;
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+}
+
+/*Cases*/
+.cases__item {
+    @media screen and (max-width: 767px) {
+        &:first-child {
+            margin-top: 40px;
+        }
+        &:not(:first-child) {
+            margin-top: 30px;
+        }
+    }
+}
+.cases__link {
+    display: block;
+    text-decoration: none;
+    box-shadow: 0;
+
+    @include transitioned(box-shadow);
+
+    &:hover, &:focus {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+            0px 4px 4px rgba(0, 0, 0, 0.06),
+            1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+}
+.cases__content {
+    padding: 20px 24px;
+    border: 1px solid #EEEEEE;
+    border-top: 0;
+}
+.cases__title {
+    margin-bottom: 4px;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.cases__type {
+    font-size: 16px;
+    line-height: 1.88;
+}
+
+.cases__thumb {
+    position: relative;
+    overflow: hidden;
+}
+.cases__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(100%);
+
+    width: 100%;
+    height: 100%;
+    padding: 63px 24px;
+    background-color: rgba(33, 150, 243, 0.9);
+
+    @include transitioned(transform);
+
+    .cases__link:hover &,
+    .cases__link:focus & {
+        transform: translateY(0);
+    }
+}
+.cases__text {
+    font-size: 18px;
+    line-height: 1.56;
+    color: $white-bg-color;
+}

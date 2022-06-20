@@ -1,0 +1,66 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
+
+    background-color: #2F303A;
+}
+.footer__text {
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+
+    color: $white-bg-color;
+}
+// contacts
+.contacts-box__list {
+    margin-top: 20px;
+}
+.contacts-box__item:not(:first-child) {
+    margin-top: 8px;
+}
+.contacts-box__link {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+
+    @include transitioned(color);
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+}
+.contacts-box__link--white {
+    color: $white-bg-color;
+}
+
+// socials
+.footer__socials {
+    margin-top: 60px;
+}
+
+//subs
+.footer__subs {
+    margin-top: 60px;
+}
+
+.subs__input {
+    display: block;
+    padding-left: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+
+    width: 100%;
+    height: 50px;
+
+    background-color: transparent;
+}
+
+

@@ -1,0 +1,135 @@
+.header {
+    border-bottom: 1px solid #ECECEC;
+
+    font-weight: 500;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+}
+.header__container {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    width: 480px;
+
+    height: 60px;
+
+}   
+.menu-mob__btn {
+    display: block;
+    margin-left: auto;
+    padding: 0;
+    border: 0;
+
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.menu-mob__btn--cross {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.menu_mob__icon {
+
+    .menu-mob__btn:hover &,
+    .menu-mob__btn:focus-within & {
+        fill: $accent-color;
+    }
+}
+
+.menu-mob__thumb {
+    @media screen and (max-width: 767px) {
+        position: fixed;
+        top: 0;
+        left: 0;
+
+        display: none;
+
+
+        width: 100vw;
+        height: 100vh;
+        padding: 48px 40px;
+
+        background-color: $white-bg-color;
+    }
+}
+.menu-mob__thumb.is-open {
+    display: flex;
+    flex-direction: column;
+
+}
+.sait-nav__item:not(:first-child) {
+    @media screen and (max-width: 767px) {
+        margin-top: 32px;
+    }
+}
+.sait-nav__link {
+    font-size: 40px;
+
+    text-decoration: none;
+    color: $title-color;
+
+}
+.sait-nav__link--current {
+    color: $accent-color;
+}
+
+.contacts {
+    @media screen and (max-width: 767px) {
+        margin-top: auto;
+    }
+}
+.contacts__item--mail {
+    margin-top: 32px;
+}
+.contacts__link {
+    font-style: normal;
+    text-decoration: none;
+    color: $text-color;
+
+    @include transitioned(color);
+}
+.contacts__link--tel {
+    font-size: 34px;
+
+    @media screen and (max-width: 767px) {
+        color: $accent-color;
+    }
+}
+.contacts__link--mail {
+    font-size: 24px;
+}
+.contacts__icon {
+    fill: currentColor;
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+}
+.header-socials {
+    display: flex;
+    margin-top: 64px;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.header-socials__item:not(:last-child){
+    margin-right: 10px;
+    padding-right: 10px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+.header-socials__link {
+    font-size: 18px;
+    line-height: 1.22;
+    color: $accent-color;
+    text-decoration: none;
+}

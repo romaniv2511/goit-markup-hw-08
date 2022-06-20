@@ -1,0 +1,26 @@
+.button {
+    padding: 10px 32px;
+    border: 0;
+    border-radius: 4px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    
+    color: $white-bg-color;
+    background-color: $accent-color;
+    
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.subs__btn {
+    display: flex;
+    align-items: center;
+    
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.btn__icon {
+    margin-left: 10px;
+}

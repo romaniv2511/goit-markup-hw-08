@@ -1,0 +1,37 @@
+.clients__set {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+}
+.clients__item {
+    margin-top: 30px;
+    margin-left: 30px;
+
+    flex-basis: calc((100% - (3*30px)) / 3);
+}
+.clients__link {
+    display: block;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+
+    @include transitioned(border-color);
+
+    &:hover,
+    &focus {
+        border-color: $accent-color;
+    }
+}
+.clients__logo {
+    width: 106px;
+    height: 60px;
+
+    fill: #AFB1B8;
+
+    @include transitioned(fill);
+
+    .clients__link:hover &,
+    .clients__link:focus-within & {
+        fill: $accent-color;
+    }
+}
