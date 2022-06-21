@@ -146,21 +146,21 @@
 
                 <ul class="list section__list">
                     <li class="services__item">
-                        <img src="./img/img1.jpg" alt="Верстка сайта" width="370">
+                        <img srcset="./img/img1.jpg 1x, ./img/img1@2x.jpg 2x" src="./img/img1.jpg" alt="Верстка сайта" width="370">
                         <p class="services__description">
                             Десктопные приложения
                         </p>
                     </li>
 
                     <li class="services__item">
-                        <img src="./img/img2.jpg" alt="Адаптация дизайна под телефон" width="370">
+                        <img srcset="./img/img2.jpg 1x, ./img/img2@2x.jpg 2x" src="./img/img2.jpg" alt="Адаптация дизайна под телефон" width="370">
                         <p class="services__description">
                             Мобильные приложения
                         </p>
                     </li>
 
                     <li class="services__item">
-                        <img src="./img/img3.jpg" alt="Выбор цветовой гаммы" width="370">
+                        <img srcset="./img/img3.jpg 1x, ./img/img3@2x.jpg 2x" src="./img/img3.jpg" alt="Выбор цветовой гаммы" width="370">
                         <p class="services__description">
                             Дизайнерские решения
                         </p>
@@ -176,7 +176,17 @@
                 
                 <ul class="list section__list">
                     <li class="employees__item">
-                        <img src="./img/employee1.jpg" alt="Фото дизайнера" width="270">
+                        <picture>
+                            <source srcset="./img/employee1-450.jpg 1x, ./img/employee1-450@2x.jpg 2x" 
+                                    sizes="100vw">
+                            <source srcset="./img/employee1-354.jpg 1x, ./img/employee1-354@2x.jpg 2x" 
+                                    media="(min-width: 768px)" 
+                                    sizes="50vw">
+                            <source srcset="./img/employee1-270.jpg 1x, ./img/employee1-270@2x.jpg 2x" 
+                                    media="(min-width: 1200px)" 
+                                    sizes="25vw">
+                            <img src="./img/employee1-450.jpg" alt="Фото дизайнера">
+                        </picture>
                         <div class="employees__content">
                             <h3 class="employees__name">Игорь Демьяненко</h3>
                             <p lang="en" class="employees__position">Product Designer</p>
@@ -216,7 +226,12 @@
                     </li>
                 
                     <li class="employees__item">
-                        <img src="./img/employee2.jpg" alt="Фото разработчика" width="270">
+                        <picture>
+                            <source srcset="./img/employee2-450.jpg 1x, ./img/employee2-450@2x.jpg 2x" sizes="450px">
+                            <source srcset="./img/employee2-354.jpg 1x, ./img/employee2-354@2x.jpg 2x" media="(min-width: 768px)" sizes="354px">
+                            <source srcset="./img/employee2-270.jpg 1x, ./img/employee2-270@2x.jpg 2x" media="(min-width: 1200px)" sizes="354px">
+                            <img src="./img/employee2-450.jpg" alt="Фото дизайнера">
+                        </picture>
                         <div class="employees__content">
                             <h3 class="employees__name">Ольга Репина</h3>
                             <p lang="en" class="employees__position">Frontend Developer</p>
@@ -254,7 +269,12 @@
                         </div>
                     </li>
                     <li class="employees__item">
-                        <img src="./img/employee3.jpg" alt="Фото маркетолога" width="270">
+                        <picture>
+                            <source srcset="./img/employee3-450.jpg 1x, ./img/employee3-450@2x.jpg 2x" sizes="450px">
+                            <source srcset="./img/employee3-354.jpg 1x, ./img/employee3-354@2x.jpg 2x" media="(min-width: 768px)" sizes="354px">
+                            <source srcset="./img/employee3-270.jpg 1x, ./img/employee3-270@2x.jpg 2x" media="(min-width: 1200px)" sizes="354px">
+                            <img src="./img/employee3-450.jpg" alt="Фото дизайнера">
+                        </picture>
                         <div class="employees__content">
                             <h3 class="employees__name">Николай Тарасов</h3>
                             <p lang="en" class="employees__position">Marketing</p>
@@ -292,7 +312,12 @@
                         </div>
                     </li>
                     <li class="employees__item">
-                        <img src="./img/employee4.jpg" alt="Фото дизайнера интерфейсов" width="270">
+                        <picture>
+                            <source srcset="./img/employee4-450.jpg 1x, ./img/employee4-450@2x.jpg 2x" sizes="450px">
+                            <source srcset="./img/employee4-354.jpg 1x, ./img/employee4-354@2x.jpg 2x" media="(min-width: 768px)" sizes="354px">
+                            <source srcset="./img/employee4-270.jpg 1x, ./img/employee4-270@2x.jpg 2x" media="(min-width: 1200px)" sizes="354px">
+                            <img src="./img/employee4-450.jpg" alt="Фото дизайнера">
+                        </picture>
                         <div class="employees__content">
                             <h3 class="employees__name">Михаил Ермаков</h3>
                             <p lang="en" class="employees__position">UI Designer</p>

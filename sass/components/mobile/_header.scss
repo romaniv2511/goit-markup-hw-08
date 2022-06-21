@@ -1,4 +1,6 @@
 .header {
+    position: relative;
+
     border-bottom: 1px solid #ECECEC;
 
     font-weight: 500;
@@ -6,8 +8,6 @@
     letter-spacing: 0.02em;
 }
 .header__container {
-    position: relative;
-
     display: flex;
     align-items: center;
     width: 480px;
