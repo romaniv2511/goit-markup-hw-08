@@ -1,16 +1,17 @@
 .header {
-    position: relative;
-
     border-bottom: 1px solid #ECECEC;
 
     font-weight: 500;
     line-height: 1.17;
     letter-spacing: 0.02em;
+
+    @media screen and (max-width: 767px) {
+            position: relative;
+        }
 }
 .header__container {
     display: flex;
     align-items: center;
-    width: 480px;
 
     height: 60px;
 
@@ -76,6 +77,13 @@
     text-decoration: none;
     color: $title-color;
 
+    @include transitioned(color);
+    
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+
 }
 .sait-nav__link--current {
     color: $accent-color;
@@ -87,7 +95,9 @@
     }
 }
 .contacts__item--mail {
-    margin-top: 32px;
+    @media screen and (max-width: 767px) {
+      margin-top: 32px;
+    }
 }
 .contacts__link {
     font-style: normal;
@@ -95,6 +105,11 @@
     color: $text-color;
 
     @include transitioned(color);
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
 }
 .contacts__link--tel {
     font-size: 34px;

@@ -11,6 +11,8 @@
     color: $white-bg-color;
     background-color: $accent-color;
     
+    cursor: pointer;
+
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .subs__btn {
@@ -20,6 +22,7 @@
     margin-top: 20px;
     margin-right: auto;
     margin-left: auto;
+    
 }
 .btn__icon {
     margin-left: 10px;

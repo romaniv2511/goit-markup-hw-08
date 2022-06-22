@@ -39,17 +39,14 @@
 .contacts-box__link--white {
     color: $white-bg-color;
 }
-
-// socials
-.footer__socials {
-    margin-top: 60px;
+@media screen and (max-width:767px) {
+    .footer__socials {
+        margin-top: 60px;
+    }
+    .footer__subs {
+        margin-top: 60px;
+    }
 }
-
-//subs
-.footer__subs {
-    margin-top: 60px;
-}
-
 .subs__input {
     display: block;
     padding-left: 16px;
@@ -61,6 +58,13 @@
     height: 50px;
 
     background-color: transparent;
+
+    @include transitioned(border-color);
+    
+        &:hover,
+        &:focus {
+            border-color: $accent-color;
+        }
 }
 
 

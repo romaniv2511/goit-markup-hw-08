@@ -1,19 +1,23 @@
 .clients__set {
     display: flex;
     flex-wrap: wrap;
+
     margin-top: -30px;
     margin-left: -30px;
 }
+
 .clients__item {
     margin-top: 30px;
     margin-left: 30px;
-
-    flex-basis: calc((100% - (3*30px)) / 3);
+    flex-basis: calc((100% - 2*30px) / 2);
 }
 .clients__link {
     display: block;
+    padding-top: 16px;
+    padding-bottom: 16px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
+    
 
     @include transitioned(border-color);
 

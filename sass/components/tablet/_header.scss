@@ -1,0 +1,56 @@
+@media screen and (min-width: 768px) {
+    .header__container {
+        height: 80px;
+    }
+
+    .menu-mob__thumb {
+        display: flex;
+        align-items: center;
+    }
+    .sait-nav__list {
+        display: flex;
+        margin-left: 88px;
+    }
+    .sait-nav__item:not(:first-child) {
+        margin-left: 50px;
+    }
+    .sait-nav__link {
+        position: relative;
+        
+        display: block;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        font-size: 12px;
+        line-height: 1.17;
+    }
+    .sait-nav__link--current::after {
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+    
+        content: '';
+        display: inline-block;
+        width: 100%;
+        height: 4px;
+        background-color: $accent-color;
+        border-radius: 2px;
+
+    }
+    .contacts {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-left: 84px;
+    }
+    .contacts__link {
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+        line-height: 1.17;
+    }
+    .contacts__link--tel {
+        margin-top: 10px;
+    }
+    .contacts__icon {
+        margin-right: 8px;
+    }
+}

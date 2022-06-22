@@ -1,0 +1,24 @@
+@media screen and (min-width: 768px) {
+    .footer__box {
+        display: flex;
+        align-items: baseline;
+        
+        @media screen and (max-width:1199px) {
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+    }
+
+    .footer__subs {
+        @media screen and (max-width:1199px) {
+          margin-top: 60px; 
+        }
+    }
+    .subs__input {
+        @media screen and (max-width:1199px) {
+ 
+            width: 450px;
+        }
+        
+    }
+}

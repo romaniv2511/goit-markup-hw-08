@@ -19,16 +19,33 @@
     width: 20px;
     height: 20px;
 }
+.socials__link--grey {
+    @include transitioned(background-color);
+    
+        &:hover,
+        &:focus {
+            background-color: $accent-color;
+        }
+}
 .socials__icon--grey {
     fill: #AFB1B8;
 
-    &:hover,
-    &:focus {
-        fill: $accent-color;
+    @include transitioned(fill);
+
+    .socials__link--grey:hover &,
+    .socials__link--grey:focus-within & {
+        fill: $white-bg-color;
     }
 }
 .socials__link--white {
     background-color:rgba(255, 255, 255, 0.1);
+
+    @include transitioned(background-color);
+    
+        &:hover ,
+        &:focus {
+            background-color: $accent-color;
+        }
 }
 .socials__icon--white {
     fill: $white-bg-color;
