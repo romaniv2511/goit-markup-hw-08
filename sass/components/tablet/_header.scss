@@ -6,6 +6,8 @@
     .menu-mob__thumb {
         display: flex;
         align-items: center;
+
+        width: 100%;
     }
     .sait-nav__list {
         display: flex;
@@ -20,7 +22,7 @@
         display: block;
         padding-top: 32px;
         padding-bottom: 32px;
-        font-size: 12px;
+        font-size: 14px;
         line-height: 1.17;
     }
     .sait-nav__link--current::after {
@@ -39,7 +41,7 @@
     .contacts {
         display: flex;
         flex-direction: column-reverse;
-        margin-left: 84px;
+        margin-left: auto;
     }
     .contacts__link {
         display: flex;
@@ -48,7 +50,10 @@
         line-height: 1.17;
     }
     .contacts__link--tel {
-        margin-top: 10px;
+        @media screen and (max-width: 1199px) {
+            margin-top: 10px;            
+        }
+
     }
     .contacts__icon {
         margin-right: 8px;

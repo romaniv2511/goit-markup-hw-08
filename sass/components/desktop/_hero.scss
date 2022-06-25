@@ -1,0 +1,27 @@
+@media screen and (min-width: 1200px) {
+    .hero {
+        padding-top: 200px;
+        padding-bottom: 200px;
+
+        max-width: 1600px; 
+        height: 600px;
+
+        background-image: url(../../../img/hero-bg-1200.jpg);
+        background-size: 1600px 600px;
+    }
+    @media screen and (min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+                .hero {
+                    background-image: url(../../../img/hero-bg-1200@2x.jpg);
+                }
+    }
+    .hero__title {
+        margin-left: auto;
+        margin-right: auto;
+        width: 696px;
+
+        font-size: 44px;
+        line-height: 1.36;
+    }
+}

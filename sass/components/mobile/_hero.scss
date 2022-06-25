@@ -15,14 +15,13 @@
     background-size: 480px 400px;
     background-position: center;
     background-repeat: no-repeat;
-
-    @media screen and (min-device-pixel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
-            .hero {
-                background-image: url(../../../img/hero-bg-480@2x.jpg);
-            }
-        }
+}
+@media screen and (min-device-pixel-ratio: 2),
+screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx) {
+    .hero {
+        background-image: url(../../../img/hero-bg-480@2x.jpg);
+    }
 }
 
 .hero__title {

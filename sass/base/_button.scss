@@ -19,10 +19,14 @@
     display: flex;
     align-items: center;
     
-    margin-top: 20px;
-    margin-right: auto;
-    margin-left: auto;
-    
+    @media screen and (max-width: 1199px) {
+        margin-top: 20px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-left: 12px;
+    }
 }
 .btn__icon {
     margin-left: 10px;

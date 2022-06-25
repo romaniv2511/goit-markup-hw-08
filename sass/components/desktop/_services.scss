@@ -1,0 +1,34 @@
+@media screen and (min-width:1200px) {
+    .services {
+        padding-top: 0;
+    }
+    .services__item {
+        position: relative;
+
+        max-width: 370px;;
+    
+        &:not(:first-child) {
+            margin-left: 30px;
+        }
+    }
+    
+    .services__description {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 70px;
+    
+    
+        font-weight: 700;
+        line-height: 1.14;
+        text-transform: uppercase;
+    
+        color: $white-bg-color;
+        background-color: rgba(47, 48, 58, 0.8);
+    }
+}
