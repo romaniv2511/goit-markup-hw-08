@@ -50,7 +50,7 @@
         position: fixed;
         top: 0;
         left: 0;
-
+        
         display: none;
 
 
@@ -64,6 +64,7 @@
 .menu-mob__thumb.is-open {
     display: flex;
     flex-direction: column;
+    z-index: 1;
 
 }
 .sait-nav__item:not(:first-child) {

@@ -4,24 +4,14 @@
 }
 .btn__set {
     display: flex;
-
-    @media screen and (max-width:767px) {
-     flex-wrap: wrap;
-    }
+    flex-wrap: wrap;
+    margin-top: -15px;
+    margin-left: -8px;
+    
 }
 .btn__item {
-    &:not(:first-child) {
-        margin-left: 8px;
-    }
-    @media screen and (max-width:767px) {
-        &:nth-last-child(-n+2) {
-            margin-top: 15px;
-        }
-
-        &:nth-child(4) {
-            margin-left: 0;
-        }
-    }
+    margin-top: 15px;
+    margin-left: 8px;
 }
 .portfolio__button {
     padding: 6px 22px;
