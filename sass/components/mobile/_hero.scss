@@ -11,7 +11,7 @@
 
     background-color: #2F303A;
 
-    background-image: url(../../../img/hero-bg-480.jpg);
+    background-image: url(../img/hero-bg-480.jpg);
     background-size: 480px 400px;
     background-position: center;
     background-repeat: no-repeat;
@@ -20,7 +20,7 @@
 screen and (min-resolution: 192dpi),
 screen and (min-resolution: 2dppx) {
     .hero {
-        background-image: url(../../../img/hero-bg-480@2x.jpg);
+        background-image: url(../img/hero-bg-480@2x.jpg);
     }
 }
 

@@ -1,7 +1,7 @@
 @media screen and (min-width: 768px) {
     .hero {
 
-        background-image: url(../../../img/hero-bg-768.jpg);
+        background-image: url(../img/hero-bg-768.jpg);
         background-size: 768px 400px;
    
     }
@@ -9,7 +9,7 @@
             screen and (min-resolution: 192dpi),
             screen and (min-resolution: 2dppx) {
                 .hero {
-                    background-image: url(../../../img/hero-bg-768@2x.jpg);
+                    background-image: url(../img/hero-bg-768@2x.jpg);
                 }
             }
     .hero__title {
