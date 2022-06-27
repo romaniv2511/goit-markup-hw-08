@@ -6,10 +6,12 @@
     letter-spacing: 0.02em;
 
     @media screen and (max-width: 767px) {
-            position: relative;
+            
         }
 }
 .header__container {
+    position: relative;
+
     display: flex;
     align-items: center;
 
@@ -28,20 +30,6 @@
 
     @media screen and (min-width: 768px) {
         display: none;
-    }
-}
-
-.menu-mob__btn--cross {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-}
-
-.menu_mob__icon {
-
-    .menu-mob__btn:hover &,
-    .menu-mob__btn:focus-within & {
-        fill: $accent-color;
     }
 }
 
@@ -66,6 +54,22 @@
     flex-direction: column;
     z-index: 1;
 
+}
+.menu-mob__btn--cross {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    @media screen and (min-width: 480px) {
+        right: 10%;
+    }
+}
+
+.menu_mob__icon {
+
+    .menu-mob__btn:hover &,
+    .menu-mob__btn:focus-within & {
+        fill: $accent-color;
+    }
 }
 .sait-nav__item:not(:first-child) {
     @media screen and (max-width: 767px) {
@@ -131,6 +135,7 @@
 }
 .header-socials {
     display: flex;
+    flex-wrap: wrap;
     margin-top: 64px;
 
     @media screen and (min-width: 768px) {

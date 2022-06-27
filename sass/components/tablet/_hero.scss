@@ -1,7 +1,10 @@
 @media screen and (min-width: 768px) {
     .hero {
-
-        background-image: url(../img/hero-bg-768.jpg);
+        max-width: 768px;
+        background-image: linear-gradient(to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+                url(../img/hero-bg-768.jpg);
         background-size: 768px 400px;
    
     }
@@ -9,7 +12,10 @@
             screen and (min-resolution: 192dpi),
             screen and (min-resolution: 2dppx) {
                 .hero {
-                    background-image: url(../img/hero-bg-768@2x.jpg);
+                    background-image: linear-gradient(to right,
+                            rgba(47, 48, 58, 0.4),
+                            rgba(47, 48, 58, 0.4)),
+                            url(../img/hero-bg-768@2x.jpg);
                 }
             }
     .hero__title {
