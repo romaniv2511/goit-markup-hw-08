@@ -17,6 +17,11 @@
     .cases__overlay {
         padding: 49px 24px;
     }
+    .cases__content--first {
+        @media screen and (max-width: 1199px) {
+           padding-bottom: 56px;
+        }
+    }
 }
 
 
